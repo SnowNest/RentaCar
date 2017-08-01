@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RentaCar
 {
-    public partial class Form1 : Form
+    public partial class RentaCar : Form
     {
-        public Form1()
+        public RentaCar()
         {
             InitializeComponent();
         }
