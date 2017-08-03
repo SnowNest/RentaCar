@@ -99,5 +99,46 @@ namespace RentaCar
                 MessageBox.Show("Los datos no estan completados");
             }
         }
+
+        private void tabAgregarReserva_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUsuariosBuscar_Click(object sender, EventArgs e)
+        {
+            FrmBuscarUsuario buscar = new FrmBuscarUsuario();
+            buscar.Show();
+        }
+
+        private void btnUsuariosBorrarUsuario_Click(object sender, EventArgs e)
+        {
+            usuariosTableAdapter ConsultaUsuarios = new usuariosTableAdapter();
+            ConsultaUsuarios.BorrarUsuario(txtUsuariosBorraUsuario.Text);
+            MessageBox.Show("Se ha borrado con exito");
+            txtUsuariosBorraUsuario.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmBuscarUsuario buscar = new FrmBuscarUsuario();
+            buscar.Show();
+        }
+
+        private void btnEdeitarUsuario_Click(object sender, EventArgs e)
+        {
+            usuariosTableAdapter ConsultaUsuarios = new usuariosTableAdapter();
+            dataModificaUsuario.DataSource = ConsultaUsuarios.BuscarUsuarioPorUsuario(txtModificarUsuario.Text);
+            txtModificarUsuario.Enabled = false;
+        }
+
+        private void btnmodificarGuardar_Click(object sender, EventArgs e)
+        {
+            usuariosTableAdapter ConsultaUsuarios = new usuariosTableAdapter();
+            ConsultaUsuarios.ModificarUsuario(txtModificarUsuario.Text, dataModificaUsuario[1, 0].Value.ToString(), dataModificaUsuario[2, 0].Value.ToString(), dataModificaUsuario[3, 0].Value.ToString(), dataModificaUsuario[4, 0].Value.ToString(), dataModificaUsuario[7, 0].Value.ToString(), dataModificaUsuario[6, 0].Value.ToString(), dataModificaUsuario[7, 0].Value.ToString(), txtModificarUsuario.Text);
+            MessageBox.Show("Se modifico con exito el  usuario " + txtModificarUsuario.Text);
+            txtModificarUsuario.Enabled = true;
+            txtModificarUsuario.Text = "";
+        }
     }
 }

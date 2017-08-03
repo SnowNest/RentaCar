@@ -44,6 +44,23 @@
             this.tabPageAutomoviles = new System.Windows.Forms.TabPage();
             this.tabControlAutomoviles = new System.Windows.Forms.TabControl();
             this.tabAgregarAutomovil = new System.Windows.Forms.TabPage();
+            this.btnAgregarAutomovil = new System.Windows.Forms.Button();
+            this.txtAgregarAutomovilPrecio = new System.Windows.Forms.TextBox();
+            this.txtAgregarAutomovilEstado = new System.Windows.Forms.ComboBox();
+            this.txtAgregarAutomovilTransmision = new System.Windows.Forms.ComboBox();
+            this.txtAgregarAutomovilTipo = new System.Windows.Forms.ComboBox();
+            this.txtAgregarAutomovilMotor = new System.Windows.Forms.ComboBox();
+            this.txtAgregarAutomovilModelo = new System.Windows.Forms.TextBox();
+            this.txtAgregarAutomovilMarca = new System.Windows.Forms.ComboBox();
+            this.txtAgregarAutomovilMatricula = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.tabEliminarAutomovil = new System.Windows.Forms.TabPage();
             this.tabModificarAutomovil = new System.Windows.Forms.TabPage();
             this.tabPageUsuarios = new System.Windows.Forms.TabPage();
@@ -69,26 +86,17 @@
             this.txtAgregarUsuarioUsuario = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tabEliminarUsuario = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnUsuariosBuscar = new System.Windows.Forms.Button();
             this.tabModificarUsuario = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtAgregarAutomovilPrecio = new System.Windows.Forms.TextBox();
-            this.txtAgregarAutomovilEstado = new System.Windows.Forms.ComboBox();
-            this.txtAgregarAutomovilTransmision = new System.Windows.Forms.ComboBox();
-            this.txtAgregarAutomovilTipo = new System.Windows.Forms.ComboBox();
-            this.txtAgregarAutomovilMotor = new System.Windows.Forms.ComboBox();
-            this.txtAgregarAutomovilModelo = new System.Windows.Forms.TextBox();
-            this.txtAgregarAutomovilMarca = new System.Windows.Forms.ComboBox();
-            this.txtAgregarAutomovilMatricula = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.btnAgregarAutomovil = new System.Windows.Forms.Button();
+            this.txtUsuariosBorraUsuario = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.btnUsuariosBorrarUsuario = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtModificarUsuario = new System.Windows.Forms.TextBox();
+            this.btnEdeitarUsuario = new System.Windows.Forms.Button();
+            this.dataModificaUsuario = new System.Windows.Forms.DataGridView();
+            this.btnmodificarGuardar = new System.Windows.Forms.Button();
             this.tabControlPrincipal.SuspendLayout();
             this.tabPageReservas.SuspendLayout();
             this.tabControlReservas.SuspendLayout();
@@ -99,6 +107,8 @@
             this.tabControlUsuarios.SuspendLayout();
             this.tabAgregarUsuario.SuspendLayout();
             this.tabEliminarUsuario.SuspendLayout();
+            this.tabModificarUsuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataModificaUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // txtLoginUsuario
@@ -196,6 +206,7 @@
             this.tabAgregarReserva.TabIndex = 0;
             this.tabAgregarReserva.Text = "Agregar";
             this.tabAgregarReserva.UseVisualStyleBackColor = true;
+            this.tabAgregarReserva.Click += new System.EventHandler(this.tabAgregarReserva_Click);
             // 
             // tabBorrarReserva
             // 
@@ -266,6 +277,190 @@
             this.tabAgregarAutomovil.TabIndex = 0;
             this.tabAgregarAutomovil.Text = "Agregar";
             this.tabAgregarAutomovil.UseVisualStyleBackColor = true;
+            // 
+            // btnAgregarAutomovil
+            // 
+            this.btnAgregarAutomovil.Location = new System.Drawing.Point(85, 219);
+            this.btnAgregarAutomovil.Name = "btnAgregarAutomovil";
+            this.btnAgregarAutomovil.Size = new System.Drawing.Size(121, 23);
+            this.btnAgregarAutomovil.TabIndex = 34;
+            this.btnAgregarAutomovil.Text = "Agregar";
+            this.btnAgregarAutomovil.UseVisualStyleBackColor = true;
+            this.btnAgregarAutomovil.Click += new System.EventHandler(this.btnAgregarAutomovil_Click);
+            // 
+            // txtAgregarAutomovilPrecio
+            // 
+            this.txtAgregarAutomovilPrecio.Location = new System.Drawing.Point(85, 193);
+            this.txtAgregarAutomovilPrecio.Name = "txtAgregarAutomovilPrecio";
+            this.txtAgregarAutomovilPrecio.Size = new System.Drawing.Size(121, 20);
+            this.txtAgregarAutomovilPrecio.TabIndex = 33;
+            // 
+            // txtAgregarAutomovilEstado
+            // 
+            this.txtAgregarAutomovilEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtAgregarAutomovilEstado.FormattingEnabled = true;
+            this.txtAgregarAutomovilEstado.Items.AddRange(new object[] {
+            "",
+            "Libre",
+            "En uso",
+            "En taller"});
+            this.txtAgregarAutomovilEstado.Location = new System.Drawing.Point(85, 166);
+            this.txtAgregarAutomovilEstado.Name = "txtAgregarAutomovilEstado";
+            this.txtAgregarAutomovilEstado.Size = new System.Drawing.Size(121, 21);
+            this.txtAgregarAutomovilEstado.TabIndex = 32;
+            // 
+            // txtAgregarAutomovilTransmision
+            // 
+            this.txtAgregarAutomovilTransmision.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtAgregarAutomovilTransmision.FormattingEnabled = true;
+            this.txtAgregarAutomovilTransmision.Items.AddRange(new object[] {
+            "",
+            "Automatica",
+            "Manual"});
+            this.txtAgregarAutomovilTransmision.Location = new System.Drawing.Point(85, 139);
+            this.txtAgregarAutomovilTransmision.Name = "txtAgregarAutomovilTransmision";
+            this.txtAgregarAutomovilTransmision.Size = new System.Drawing.Size(121, 21);
+            this.txtAgregarAutomovilTransmision.TabIndex = 31;
+            // 
+            // txtAgregarAutomovilTipo
+            // 
+            this.txtAgregarAutomovilTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtAgregarAutomovilTipo.FormattingEnabled = true;
+            this.txtAgregarAutomovilTipo.Items.AddRange(new object[] {
+            "",
+            "Sedan",
+            "SUV",
+            "PICKUP",
+            "VAN",
+            "Comercial",
+            "Deportivo"});
+            this.txtAgregarAutomovilTipo.Location = new System.Drawing.Point(85, 112);
+            this.txtAgregarAutomovilTipo.Name = "txtAgregarAutomovilTipo";
+            this.txtAgregarAutomovilTipo.Size = new System.Drawing.Size(121, 21);
+            this.txtAgregarAutomovilTipo.TabIndex = 30;
+            // 
+            // txtAgregarAutomovilMotor
+            // 
+            this.txtAgregarAutomovilMotor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtAgregarAutomovilMotor.FormattingEnabled = true;
+            this.txtAgregarAutomovilMotor.Items.AddRange(new object[] {
+            "",
+            "Diesel",
+            "Gasolina",
+            "Hibrido",
+            "Electrico"});
+            this.txtAgregarAutomovilMotor.Location = new System.Drawing.Point(85, 85);
+            this.txtAgregarAutomovilMotor.Name = "txtAgregarAutomovilMotor";
+            this.txtAgregarAutomovilMotor.Size = new System.Drawing.Size(121, 21);
+            this.txtAgregarAutomovilMotor.TabIndex = 29;
+            // 
+            // txtAgregarAutomovilModelo
+            // 
+            this.txtAgregarAutomovilModelo.Location = new System.Drawing.Point(85, 59);
+            this.txtAgregarAutomovilModelo.Name = "txtAgregarAutomovilModelo";
+            this.txtAgregarAutomovilModelo.Size = new System.Drawing.Size(121, 20);
+            this.txtAgregarAutomovilModelo.TabIndex = 28;
+            // 
+            // txtAgregarAutomovilMarca
+            // 
+            this.txtAgregarAutomovilMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtAgregarAutomovilMarca.FormattingEnabled = true;
+            this.txtAgregarAutomovilMarca.Items.AddRange(new object[] {
+            "",
+            "TOYOTA",
+            "Hyundai",
+            "Kia",
+            "Nissan",
+            "Chrysler",
+            "FORD",
+            "HONDA",
+            "Mitsubishi",
+            "Mazda",
+            "SCION",
+            "Otros..."});
+            this.txtAgregarAutomovilMarca.Location = new System.Drawing.Point(85, 32);
+            this.txtAgregarAutomovilMarca.Name = "txtAgregarAutomovilMarca";
+            this.txtAgregarAutomovilMarca.Size = new System.Drawing.Size(121, 21);
+            this.txtAgregarAutomovilMarca.TabIndex = 27;
+            // 
+            // txtAgregarAutomovilMatricula
+            // 
+            this.txtAgregarAutomovilMatricula.Location = new System.Drawing.Point(85, 6);
+            this.txtAgregarAutomovilMatricula.Name = "txtAgregarAutomovilMatricula";
+            this.txtAgregarAutomovilMatricula.Size = new System.Drawing.Size(121, 20);
+            this.txtAgregarAutomovilMatricula.TabIndex = 26;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(39, 200);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(40, 13);
+            this.label21.TabIndex = 25;
+            this.label21.Text = "Precio:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(36, 174);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(43, 13);
+            this.label20.TabIndex = 24;
+            this.label20.Text = "Estado:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(13, 147);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(66, 13);
+            this.label19.TabIndex = 23;
+            this.label19.Text = "Transmision:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(48, 120);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(31, 13);
+            this.label18.TabIndex = 22;
+            this.label18.Text = "Tipo:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(42, 93);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(37, 13);
+            this.label17.TabIndex = 21;
+            this.label17.Text = "Motor:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(34, 66);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(45, 13);
+            this.label16.TabIndex = 20;
+            this.label16.Text = "Modelo:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(39, 40);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(40, 13);
+            this.label15.TabIndex = 19;
+            this.label15.Text = "Marca:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(26, 13);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(53, 13);
+            this.label14.TabIndex = 18;
+            this.label14.Text = "Matricula:";
             // 
             // tabEliminarAutomovil
             // 
@@ -501,7 +696,10 @@
             // 
             // tabEliminarUsuario
             // 
-            this.tabEliminarUsuario.Controls.Add(this.textBox1);
+            this.tabEliminarUsuario.Controls.Add(this.btnUsuariosBorrarUsuario);
+            this.tabEliminarUsuario.Controls.Add(this.label13);
+            this.tabEliminarUsuario.Controls.Add(this.txtUsuariosBorraUsuario);
+            this.tabEliminarUsuario.Controls.Add(this.btnUsuariosBuscar);
             this.tabEliminarUsuario.Location = new System.Drawing.Point(23, 4);
             this.tabEliminarUsuario.Name = "tabEliminarUsuario";
             this.tabEliminarUsuario.Padding = new System.Windows.Forms.Padding(3);
@@ -510,15 +708,23 @@
             this.tabEliminarUsuario.Text = "Eliminar";
             this.tabEliminarUsuario.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // btnUsuariosBuscar
             // 
-            this.textBox1.Location = new System.Drawing.Point(108, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.btnUsuariosBuscar.Location = new System.Drawing.Point(6, 6);
+            this.btnUsuariosBuscar.Name = "btnUsuariosBuscar";
+            this.btnUsuariosBuscar.Size = new System.Drawing.Size(92, 23);
+            this.btnUsuariosBuscar.TabIndex = 0;
+            this.btnUsuariosBuscar.Text = "Buscar usuario";
+            this.btnUsuariosBuscar.UseVisualStyleBackColor = true;
+            this.btnUsuariosBuscar.Click += new System.EventHandler(this.btnUsuariosBuscar_Click);
             // 
             // tabModificarUsuario
             // 
+            this.tabModificarUsuario.Controls.Add(this.btnmodificarGuardar);
+            this.tabModificarUsuario.Controls.Add(this.dataModificaUsuario);
+            this.tabModificarUsuario.Controls.Add(this.btnEdeitarUsuario);
+            this.tabModificarUsuario.Controls.Add(this.txtModificarUsuario);
+            this.tabModificarUsuario.Controls.Add(this.button1);
             this.tabModificarUsuario.Location = new System.Drawing.Point(23, 4);
             this.tabModificarUsuario.Name = "tabModificarUsuario";
             this.tabModificarUsuario.Size = new System.Drawing.Size(758, 496);
@@ -536,189 +742,76 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "RentaCarSytem © 2017";
             // 
-            // txtAgregarAutomovilPrecio
+            // txtUsuariosBorraUsuario
             // 
-            this.txtAgregarAutomovilPrecio.Location = new System.Drawing.Point(85, 193);
-            this.txtAgregarAutomovilPrecio.Name = "txtAgregarAutomovilPrecio";
-            this.txtAgregarAutomovilPrecio.Size = new System.Drawing.Size(121, 20);
-            this.txtAgregarAutomovilPrecio.TabIndex = 33;
+            this.txtUsuariosBorraUsuario.Location = new System.Drawing.Point(156, 13);
+            this.txtUsuariosBorraUsuario.Name = "txtUsuariosBorraUsuario";
+            this.txtUsuariosBorraUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtUsuariosBorraUsuario.TabIndex = 1;
             // 
-            // txtAgregarAutomovilEstado
+            // label13
             // 
-            this.txtAgregarAutomovilEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtAgregarAutomovilEstado.FormattingEnabled = true;
-            this.txtAgregarAutomovilEstado.Items.AddRange(new object[] {
-            "",
-            "Libre",
-            "En uso",
-            "En taller"});
-            this.txtAgregarAutomovilEstado.Location = new System.Drawing.Point(85, 166);
-            this.txtAgregarAutomovilEstado.Name = "txtAgregarAutomovilEstado";
-            this.txtAgregarAutomovilEstado.Size = new System.Drawing.Size(121, 21);
-            this.txtAgregarAutomovilEstado.TabIndex = 32;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(104, 16);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(46, 13);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Usuario:";
             // 
-            // txtAgregarAutomovilTransmision
+            // btnUsuariosBorrarUsuario
             // 
-            this.txtAgregarAutomovilTransmision.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtAgregarAutomovilTransmision.FormattingEnabled = true;
-            this.txtAgregarAutomovilTransmision.Items.AddRange(new object[] {
-            "",
-            "Automatica",
-            "Manual"});
-            this.txtAgregarAutomovilTransmision.Location = new System.Drawing.Point(85, 139);
-            this.txtAgregarAutomovilTransmision.Name = "txtAgregarAutomovilTransmision";
-            this.txtAgregarAutomovilTransmision.Size = new System.Drawing.Size(121, 21);
-            this.txtAgregarAutomovilTransmision.TabIndex = 31;
+            this.btnUsuariosBorrarUsuario.Location = new System.Drawing.Point(156, 39);
+            this.btnUsuariosBorrarUsuario.Name = "btnUsuariosBorrarUsuario";
+            this.btnUsuariosBorrarUsuario.Size = new System.Drawing.Size(100, 23);
+            this.btnUsuariosBorrarUsuario.TabIndex = 3;
+            this.btnUsuariosBorrarUsuario.Text = "Borrar";
+            this.btnUsuariosBorrarUsuario.UseVisualStyleBackColor = true;
+            this.btnUsuariosBorrarUsuario.Click += new System.EventHandler(this.btnUsuariosBorrarUsuario_Click);
             // 
-            // txtAgregarAutomovilTipo
+            // button1
             // 
-            this.txtAgregarAutomovilTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtAgregarAutomovilTipo.FormattingEnabled = true;
-            this.txtAgregarAutomovilTipo.Items.AddRange(new object[] {
-            "",
-            "Sedan",
-            "SUV",
-            "PICKUP",
-            "VAN",
-            "Comercial",
-            "Deportivo"});
-            this.txtAgregarAutomovilTipo.Location = new System.Drawing.Point(85, 112);
-            this.txtAgregarAutomovilTipo.Name = "txtAgregarAutomovilTipo";
-            this.txtAgregarAutomovilTipo.Size = new System.Drawing.Size(121, 21);
-            this.txtAgregarAutomovilTipo.TabIndex = 30;
+            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Buscar usuario";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtAgregarAutomovilMotor
+            // txtModificarUsuario
             // 
-            this.txtAgregarAutomovilMotor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtAgregarAutomovilMotor.FormattingEnabled = true;
-            this.txtAgregarAutomovilMotor.Items.AddRange(new object[] {
-            "",
-            "Diesel",
-            "Gasolina",
-            "Hibrido",
-            "Electrico"});
-            this.txtAgregarAutomovilMotor.Location = new System.Drawing.Point(85, 85);
-            this.txtAgregarAutomovilMotor.Name = "txtAgregarAutomovilMotor";
-            this.txtAgregarAutomovilMotor.Size = new System.Drawing.Size(121, 21);
-            this.txtAgregarAutomovilMotor.TabIndex = 29;
+            this.txtModificarUsuario.Location = new System.Drawing.Point(134, 6);
+            this.txtModificarUsuario.Name = "txtModificarUsuario";
+            this.txtModificarUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtModificarUsuario.TabIndex = 1;
             // 
-            // txtAgregarAutomovilModelo
+            // btnEdeitarUsuario
             // 
-            this.txtAgregarAutomovilModelo.Location = new System.Drawing.Point(85, 59);
-            this.txtAgregarAutomovilModelo.Name = "txtAgregarAutomovilModelo";
-            this.txtAgregarAutomovilModelo.Size = new System.Drawing.Size(121, 20);
-            this.txtAgregarAutomovilModelo.TabIndex = 28;
+            this.btnEdeitarUsuario.Location = new System.Drawing.Point(240, 6);
+            this.btnEdeitarUsuario.Name = "btnEdeitarUsuario";
+            this.btnEdeitarUsuario.Size = new System.Drawing.Size(75, 23);
+            this.btnEdeitarUsuario.TabIndex = 2;
+            this.btnEdeitarUsuario.Text = "Editar";
+            this.btnEdeitarUsuario.UseVisualStyleBackColor = true;
+            this.btnEdeitarUsuario.Click += new System.EventHandler(this.btnEdeitarUsuario_Click);
             // 
-            // txtAgregarAutomovilMarca
+            // dataModificaUsuario
             // 
-            this.txtAgregarAutomovilMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtAgregarAutomovilMarca.FormattingEnabled = true;
-            this.txtAgregarAutomovilMarca.Items.AddRange(new object[] {
-            "",
-            "TOYOTA",
-            "Hyundai",
-            "Kia",
-            "Nissan",
-            "Chrysler",
-            "FORD",
-            "HONDA",
-            "Mitsubishi",
-            "Mazda",
-            "SCION",
-            "Otros..."});
-            this.txtAgregarAutomovilMarca.Location = new System.Drawing.Point(85, 32);
-            this.txtAgregarAutomovilMarca.Name = "txtAgregarAutomovilMarca";
-            this.txtAgregarAutomovilMarca.Size = new System.Drawing.Size(121, 21);
-            this.txtAgregarAutomovilMarca.TabIndex = 27;
+            this.dataModificaUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataModificaUsuario.Location = new System.Drawing.Point(12, 35);
+            this.dataModificaUsuario.Name = "dataModificaUsuario";
+            this.dataModificaUsuario.Size = new System.Drawing.Size(732, 72);
+            this.dataModificaUsuario.TabIndex = 3;
             // 
-            // txtAgregarAutomovilMatricula
+            // btnmodificarGuardar
             // 
-            this.txtAgregarAutomovilMatricula.Location = new System.Drawing.Point(85, 6);
-            this.txtAgregarAutomovilMatricula.Name = "txtAgregarAutomovilMatricula";
-            this.txtAgregarAutomovilMatricula.Size = new System.Drawing.Size(121, 20);
-            this.txtAgregarAutomovilMatricula.TabIndex = 26;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(39, 200);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(40, 13);
-            this.label21.TabIndex = 25;
-            this.label21.Text = "Precio:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(36, 174);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(43, 13);
-            this.label20.TabIndex = 24;
-            this.label20.Text = "Estado:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(13, 147);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(66, 13);
-            this.label19.TabIndex = 23;
-            this.label19.Text = "Transmision:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(48, 120);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(31, 13);
-            this.label18.TabIndex = 22;
-            this.label18.Text = "Tipo:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(42, 93);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(37, 13);
-            this.label17.TabIndex = 21;
-            this.label17.Text = "Motor:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(34, 66);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(45, 13);
-            this.label16.TabIndex = 20;
-            this.label16.Text = "Modelo:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(39, 40);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(40, 13);
-            this.label15.TabIndex = 19;
-            this.label15.Text = "Marca:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(26, 13);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(53, 13);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "Matricula:";
-            // 
-            // btnAgregarAutomovil
-            // 
-            this.btnAgregarAutomovil.Location = new System.Drawing.Point(85, 219);
-            this.btnAgregarAutomovil.Name = "btnAgregarAutomovil";
-            this.btnAgregarAutomovil.Size = new System.Drawing.Size(121, 23);
-            this.btnAgregarAutomovil.TabIndex = 34;
-            this.btnAgregarAutomovil.Text = "Agregar";
-            this.btnAgregarAutomovil.UseVisualStyleBackColor = true;
-            this.btnAgregarAutomovil.Click += new System.EventHandler(this.btnAgregarAutomovil_Click);
+            this.btnmodificarGuardar.Location = new System.Drawing.Point(12, 113);
+            this.btnmodificarGuardar.Name = "btnmodificarGuardar";
+            this.btnmodificarGuardar.Size = new System.Drawing.Size(116, 23);
+            this.btnmodificarGuardar.TabIndex = 4;
+            this.btnmodificarGuardar.Text = "Guardar Cambios";
+            this.btnmodificarGuardar.UseVisualStyleBackColor = true;
+            this.btnmodificarGuardar.Click += new System.EventHandler(this.btnmodificarGuardar_Click);
             // 
             // RentaCar
             // 
@@ -752,6 +845,9 @@
             this.tabAgregarUsuario.PerformLayout();
             this.tabEliminarUsuario.ResumeLayout(false);
             this.tabEliminarUsuario.PerformLayout();
+            this.tabModificarUsuario.ResumeLayout(false);
+            this.tabModificarUsuario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataModificaUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -801,7 +897,6 @@
         private System.Windows.Forms.TextBox txtAgregarUsuarioUsuario;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnAgregarUsuario;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox txtAgregarAutomovilPrecio;
         private System.Windows.Forms.ComboBox txtAgregarAutomovilEstado;
         private System.Windows.Forms.ComboBox txtAgregarAutomovilTransmision;
@@ -819,6 +914,15 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnAgregarAutomovil;
+        private System.Windows.Forms.Button btnUsuariosBuscar;
+        private System.Windows.Forms.Button btnUsuariosBorrarUsuario;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtUsuariosBorraUsuario;
+        private System.Windows.Forms.Button btnmodificarGuardar;
+        private System.Windows.Forms.DataGridView dataModificaUsuario;
+        private System.Windows.Forms.Button btnEdeitarUsuario;
+        private System.Windows.Forms.TextBox txtModificarUsuario;
+        private System.Windows.Forms.Button button1;
     }
 }
 
