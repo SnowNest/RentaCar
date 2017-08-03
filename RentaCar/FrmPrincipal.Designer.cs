@@ -72,7 +72,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabModificarUsuario = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.txtAgregarAutomovilPrecio = new System.Windows.Forms.TextBox();
             this.txtAgregarAutomovilEstado = new System.Windows.Forms.ComboBox();
             this.txtAgregarAutomovilTransmision = new System.Windows.Forms.ComboBox();
@@ -537,15 +536,6 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "RentaCarSytem © 2017";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(0, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(50, 13);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "Matricula";
-            // 
             // txtAgregarAutomovilPrecio
             // 
             this.txtAgregarAutomovilPrecio.Location = new System.Drawing.Point(85, 193);
@@ -735,7 +725,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tabControlPrincipal);
             this.Controls.Add(this.btnLogOut);
@@ -829,7 +818,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnAgregarAutomovil;
     }
 }
