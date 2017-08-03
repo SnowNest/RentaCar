@@ -279,7 +279,16 @@ FROM            usuarios</CommandText>
               <Mapping SourceColumn="estado" DataSetColumn="estado" />
               <Mapping SourceColumn="precio" DataSetColumn="precio" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="RentaCarDataBaseConnectionString (Settings)" DbObjectName="veiculos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="BuscarVeiculo" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="BuscarVeiculo" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="BuscarVeiculo" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT matricula FROM veiculos</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />
@@ -289,7 +298,7 @@ FROM            usuarios</CommandText>
   <xs:element name="RentaCarDataBaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="RentaCarDataBaseDataSet" msprop:Generator_UserDSName="RentaCarDataBaseDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ofertas" msprop:Generator_TableClassName="ofertasDataTable" msprop:Generator_TableVarName="tableofertas" msprop:Generator_RowChangedName="ofertasRowChanged" msprop:Generator_TablePropName="ofertas" msprop:Generator_RowDeletingName="ofertasRowDeleting" msprop:Generator_RowChangingName="ofertasRowChanging" msprop:Generator_RowEvHandlerName="ofertasRowChangeEventHandler" msprop:Generator_RowDeletedName="ofertasRowDeleted" msprop:Generator_RowClassName="ofertasRow" msprop:Generator_UserTableName="ofertas" msprop:Generator_RowEvArgName="ofertasRowChangeEvent">
+        <xs:element name="ofertas" msprop:Generator_TableClassName="ofertasDataTable" msprop:Generator_TableVarName="tableofertas" msprop:Generator_TablePropName="ofertas" msprop:Generator_RowDeletingName="ofertasRowDeleting" msprop:Generator_RowChangingName="ofertasRowChanging" msprop:Generator_RowEvHandlerName="ofertasRowChangeEventHandler" msprop:Generator_RowDeletedName="ofertasRowDeleted" msprop:Generator_UserTableName="ofertas" msprop:Generator_RowChangedName="ofertasRowChanged" msprop:Generator_RowEvArgName="ofertasRowChangeEvent" msprop:Generator_RowClassName="ofertasRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="clave_oferta" msprop:Generator_ColumnVarNameInTable="columnclave_oferta" msprop:Generator_ColumnPropNameInRow="clave_oferta" msprop:Generator_ColumnPropNameInTable="clave_ofertaColumn" msprop:Generator_UserColumnName="clave_oferta">
@@ -309,7 +318,7 @@ FROM            usuarios</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="reservas" msprop:Generator_TableClassName="reservasDataTable" msprop:Generator_TableVarName="tablereservas" msprop:Generator_RowChangedName="reservasRowChanged" msprop:Generator_TablePropName="reservas" msprop:Generator_RowDeletingName="reservasRowDeleting" msprop:Generator_RowChangingName="reservasRowChanging" msprop:Generator_RowEvHandlerName="reservasRowChangeEventHandler" msprop:Generator_RowDeletedName="reservasRowDeleted" msprop:Generator_RowClassName="reservasRow" msprop:Generator_UserTableName="reservas" msprop:Generator_RowEvArgName="reservasRowChangeEvent">
+        <xs:element name="reservas" msprop:Generator_TableClassName="reservasDataTable" msprop:Generator_TableVarName="tablereservas" msprop:Generator_TablePropName="reservas" msprop:Generator_RowDeletingName="reservasRowDeleting" msprop:Generator_RowChangingName="reservasRowChanging" msprop:Generator_RowEvHandlerName="reservasRowChangeEventHandler" msprop:Generator_RowDeletedName="reservasRowDeleted" msprop:Generator_UserTableName="reservas" msprop:Generator_RowChangedName="reservasRowChanged" msprop:Generator_RowEvArgName="reservasRowChangeEvent" msprop:Generator_RowClassName="reservasRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_usuario" msprop:Generator_ColumnVarNameInTable="columnid_usuario" msprop:Generator_ColumnPropNameInRow="id_usuario" msprop:Generator_ColumnPropNameInTable="id_usuarioColumn" msprop:Generator_UserColumnName="id_usuario" minOccurs="0">
@@ -352,7 +361,7 @@ FROM            usuarios</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="usuarios" msprop:Generator_TableClassName="usuariosDataTable" msprop:Generator_TableVarName="tableusuarios" msprop:Generator_RowChangedName="usuariosRowChanged" msprop:Generator_TablePropName="usuarios" msprop:Generator_RowDeletingName="usuariosRowDeleting" msprop:Generator_RowChangingName="usuariosRowChanging" msprop:Generator_RowEvHandlerName="usuariosRowChangeEventHandler" msprop:Generator_RowDeletedName="usuariosRowDeleted" msprop:Generator_RowClassName="usuariosRow" msprop:Generator_UserTableName="usuarios" msprop:Generator_RowEvArgName="usuariosRowChangeEvent">
+        <xs:element name="usuarios" msprop:Generator_TableClassName="usuariosDataTable" msprop:Generator_TableVarName="tableusuarios" msprop:Generator_TablePropName="usuarios" msprop:Generator_RowDeletingName="usuariosRowDeleting" msprop:Generator_RowChangingName="usuariosRowChanging" msprop:Generator_RowEvHandlerName="usuariosRowChangeEventHandler" msprop:Generator_RowDeletedName="usuariosRowDeleted" msprop:Generator_UserTableName="usuarios" msprop:Generator_RowChangedName="usuariosRowChanged" msprop:Generator_RowEvArgName="usuariosRowChangeEvent" msprop:Generator_RowClassName="usuariosRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="usuario" msprop:Generator_ColumnVarNameInTable="columnusuario" msprop:Generator_ColumnPropNameInRow="usuario" msprop:Generator_ColumnPropNameInTable="usuarioColumn" msprop:Generator_UserColumnName="usuario">
@@ -414,7 +423,7 @@ FROM            usuarios</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="veiculos" msprop:Generator_TableClassName="veiculosDataTable" msprop:Generator_TableVarName="tableveiculos" msprop:Generator_RowChangedName="veiculosRowChanged" msprop:Generator_TablePropName="veiculos" msprop:Generator_RowDeletingName="veiculosRowDeleting" msprop:Generator_RowChangingName="veiculosRowChanging" msprop:Generator_RowEvHandlerName="veiculosRowChangeEventHandler" msprop:Generator_RowDeletedName="veiculosRowDeleted" msprop:Generator_RowClassName="veiculosRow" msprop:Generator_UserTableName="veiculos" msprop:Generator_RowEvArgName="veiculosRowChangeEvent">
+        <xs:element name="veiculos" msprop:Generator_TableClassName="veiculosDataTable" msprop:Generator_TableVarName="tableveiculos" msprop:Generator_TablePropName="veiculos" msprop:Generator_RowDeletingName="veiculosRowDeleting" msprop:Generator_RowChangingName="veiculosRowChanging" msprop:Generator_RowEvHandlerName="veiculosRowChangeEventHandler" msprop:Generator_RowDeletedName="veiculosRowDeleted" msprop:Generator_UserTableName="veiculos" msprop:Generator_RowChangedName="veiculosRowChanged" msprop:Generator_RowEvArgName="veiculosRowChangeEvent" msprop:Generator_RowClassName="veiculosRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="matricula" msprop:Generator_ColumnVarNameInTable="columnmatricula" msprop:Generator_ColumnPropNameInRow="matricula" msprop:Generator_ColumnPropNameInTable="matriculaColumn" msprop:Generator_UserColumnName="matricula">
@@ -493,9 +502,9 @@ FROM            usuarios</CommandText>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="ofertasreservas" msdata:parent="ofertas" msdata:child="reservas" msdata:parentkey="clave_oferta" msdata:childkey="id_oferta" msprop:Generator_UserChildTable="reservas" msprop:Generator_ChildPropName="GetreservasRows" msprop:Generator_UserRelationName="ofertasreservas" msprop:Generator_RelationVarName="relationofertasreservas" msprop:Generator_UserParentTable="ofertas" msprop:Generator_ParentPropName="ofertasRow" />
-      <msdata:Relationship name="usuariosreservas" msdata:parent="usuarios" msdata:child="reservas" msdata:parentkey="usuario" msdata:childkey="id_usuario" msprop:Generator_UserChildTable="reservas" msprop:Generator_ChildPropName="GetreservasRows" msprop:Generator_UserRelationName="usuariosreservas" msprop:Generator_ParentPropName="usuariosRow" msprop:Generator_RelationVarName="relationusuariosreservas" msprop:Generator_UserParentTable="usuarios" />
-      <msdata:Relationship name="veiculosreservas" msdata:parent="veiculos" msdata:child="reservas" msdata:parentkey="matricula precio" msdata:childkey="id_matricula id_precio" msprop:Generator_UserChildTable="reservas" msprop:Generator_ChildPropName="GetreservasRows" msprop:Generator_UserRelationName="veiculosreservas" msprop:Generator_ParentPropName="veiculosRowParent" msprop:Generator_RelationVarName="relationveiculosreservas" msprop:Generator_UserParentTable="veiculos" />
+      <msdata:Relationship name="ofertasreservas" msdata:parent="ofertas" msdata:child="reservas" msdata:parentkey="clave_oferta" msdata:childkey="id_oferta" msprop:Generator_UserChildTable="reservas" msprop:Generator_ChildPropName="GetreservasRows" msprop:Generator_UserRelationName="ofertasreservas" msprop:Generator_ParentPropName="ofertasRow" msprop:Generator_RelationVarName="relationofertasreservas" msprop:Generator_UserParentTable="ofertas" />
+      <msdata:Relationship name="usuariosreservas" msdata:parent="usuarios" msdata:child="reservas" msdata:parentkey="usuario" msdata:childkey="id_usuario" msprop:Generator_UserChildTable="reservas" msprop:Generator_ChildPropName="GetreservasRows" msprop:Generator_UserRelationName="usuariosreservas" msprop:Generator_RelationVarName="relationusuariosreservas" msprop:Generator_UserParentTable="usuarios" msprop:Generator_ParentPropName="usuariosRow" />
+      <msdata:Relationship name="veiculosreservas" msdata:parent="veiculos" msdata:child="reservas" msdata:parentkey="matricula precio" msdata:childkey="id_matricula id_precio" msprop:Generator_UserChildTable="reservas" msprop:Generator_ChildPropName="GetreservasRows" msprop:Generator_UserRelationName="veiculosreservas" msprop:Generator_RelationVarName="relationveiculosreservas" msprop:Generator_UserParentTable="veiculos" msprop:Generator_ParentPropName="veiculosRowParent" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

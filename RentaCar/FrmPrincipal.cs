@@ -62,5 +62,42 @@ namespace RentaCar
                 MessageBox.Show("Las Contraseñas no coinciden y/o los datos no estan completados");
             }
         }
+
+        private void btnAgregarAutomovil_Click(object sender, EventArgs e)
+        {
+            veiculosTableAdapter ConsultaVeiculos = new veiculosTableAdapter();
+            Boolean shot = true;
+
+            if (txtAgregarAutomovilMatricula.Text != "" && txtAgregarAutomovilMarca.Text != "" && txtAgregarAutomovilModelo.Text != "" && txtAgregarAutomovilMotor.Text != "" && txtAgregarAutomovilTipo.Text != "" && txtAgregarAutomovilTransmision.Text != "" && txtAgregarAutomovilEstado.Text != "" && txtAgregarAutomovilPrecio.Text != "")
+            {
+                foreach (DataRow row in ConsultaVeiculos.BuscarVeiculo().Rows)
+                {
+                    if (row[0].ToString() == txtAgregarAutomovilMatricula.Text)
+                    {
+                        MessageBox.Show("La matricula: " + row[0].ToString() + " ya existe");
+                        shot = false;
+                    }
+
+                }
+
+                if (shot == true)
+                {
+                    ConsultaVeiculos.Insert(txtAgregarAutomovilMatricula.Text, txtAgregarAutomovilMarca.Text, txtAgregarAutomovilModelo.Text, txtAgregarAutomovilMotor.Text, txtAgregarAutomovilTipo.Text, txtAgregarAutomovilTransmision.Text, txtAgregarAutomovilEstado.Text, txtAgregarAutomovilPrecio.Text);
+                    MessageBox.Show(txtAgregarAutomovilMatricula.Text + "Agregado");
+                    txtAgregarAutomovilMatricula.Text = "";
+                    txtAgregarAutomovilMarca.Text = "";
+                    txtAgregarAutomovilModelo.Text = "";
+                    txtAgregarAutomovilMotor.Text = "";
+                    txtAgregarAutomovilTipo.Text = "";
+                    txtAgregarAutomovilTransmision.Text = "";
+                    txtAgregarAutomovilEstado.Text = "";
+                    txtAgregarAutomovilPrecio.Text = "";
+                }
+            }
+            else
+            {
+                MessageBox.Show("Los datos no estan completados");
+            }
+        }
     }
 }
