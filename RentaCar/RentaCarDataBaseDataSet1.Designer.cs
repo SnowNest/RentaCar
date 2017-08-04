@@ -4319,7 +4319,7 @@ namespace RentaCar.RentaCarDataBaseDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[11];
+            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[12];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT matricula, marca, modelo, motor, tipo, transmicion, estado, precio FROM ve" +
@@ -4377,19 +4377,26 @@ namespace RentaCar.RentaCarDataBaseDataSetTableAdapters {
             this._commandCollection[9].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("matricula", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "matricula", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[10] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[10].Connection = this.Connection;
-            this._commandCollection[10].CommandText = "UPDATE       veiculos\r\nSET                matricula = ?, marca = ?, modelo = ?, m" +
+            this._commandCollection[10].CommandText = "UPDATE       veiculos\r\nSET                estado = ?\r\nWHERE        (matricula = ?" +
+                ")";
+            this._commandCollection[10].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[10].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("estado", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "estado", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[10].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_matricula", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "matricula", global::System.Data.DataRowVersion.Original, false, null));
+            this._commandCollection[11] = new global::System.Data.OleDb.OleDbCommand();
+            this._commandCollection[11].Connection = this.Connection;
+            this._commandCollection[11].CommandText = "UPDATE       veiculos\r\nSET                matricula = ?, marca = ?, modelo = ?, m" +
                 "otor = ?, tipo = ?, transmicion = ?, estado = ?, precio = ?\r\nWHERE        (matri" +
                 "cula = ?)";
-            this._commandCollection[10].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[10].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("matricula", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "matricula", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[10].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("marca", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "marca", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[10].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("modelo", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "modelo", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[10].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("motor", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "motor", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[10].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("tipo", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "tipo", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[10].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("transmicion", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "transmicion", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[10].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("estado", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "estado", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[10].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("precio", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "precio", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[10].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_matricula", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "matricula", global::System.Data.DataRowVersion.Original, false, null));
+            this._commandCollection[11].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[11].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("matricula", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "matricula", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[11].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("marca", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "marca", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[11].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("modelo", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "modelo", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[11].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("motor", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "motor", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[11].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("tipo", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "tipo", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[11].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("transmicion", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "transmicion", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[11].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("estado", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "estado", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[11].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("precio", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "precio", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[11].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_matricula", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "matricula", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5049,8 +5056,43 @@ namespace RentaCar.RentaCarDataBaseDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
-        public virtual int ModificarVel(string matricula, string marca, string modelo, string motor, string tipo, string transmicion, string estado, string precio, string Original_matricula) {
+        public virtual int Hola(string estado, string Original_matricula) {
             global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[10];
+            if ((estado == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(estado));
+            }
+            if ((Original_matricula == null)) {
+                throw new global::System.ArgumentNullException("Original_matricula");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(Original_matricula));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int ModificarVel(string matricula, string marca, string modelo, string motor, string tipo, string transmicion, string estado, string precio, string Original_matricula) {
+            global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[11];
             if ((matricula == null)) {
                 throw new global::System.ArgumentNullException("matricula");
             }

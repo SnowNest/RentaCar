@@ -68,7 +68,7 @@
     <Compile Include="RentaCarDataBaseDataSet.cs">
       <DependentUpon>RentaCarDataBaseDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="RentaCarDataBaseDataSet.Designer.cs">
+    <Compile Include="RentaCarDataBaseDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RentaCarDataBaseDataSet.xsd</DependentUpon>
@@ -106,6 +106,7 @@
     <None Include="RentaCarDataBaseDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>RentaCarDataBaseDataSet1.Designer.cs</LastGenOutput>
     </None>
     <None Include="RentaCarDataBaseDataSet.xss">
       <DependentUpon>RentaCarDataBaseDataSet.xsd</DependentUpon>

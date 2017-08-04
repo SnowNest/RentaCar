@@ -13,7 +13,7 @@ namespace RentaCar
 {
     public partial class RentaCar : Form
     {
-        
+
         public RentaCar()
         {
             InitializeComponent();
@@ -21,7 +21,9 @@ namespace RentaCar
 
         private void RentaCar_Load(object sender, EventArgs e)
         {
-           
+            tabControlAutomoviles.Enabled = false;
+            tabControlUsuarios.Enabled = false;
+            tabControlReservas.Enabled = false;
         }
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
@@ -29,8 +31,8 @@ namespace RentaCar
             usuariosTableAdapter ConsultaUsuarios = new usuariosTableAdapter();
             Boolean shot = true;
 
-            if (txtAgregarUsuarioContrasena.Text == txtAgregarUsuarioContrasenaV.Text && txtAgregarUsuarioUsuario.Text != "" && txtAgregarUsuarioNombre.Text != "" && txtAgregarUsuarioPaterno.Text != "" && txtAgregarUsuarioMaterno.Text != "" && txtAgregarUsuarionivel.Text != "" && txtAgregarUsuarioTelefono.Text != "" && txtAgregarUsuarioDireccion.Text != "" && txtAgregarUsuarioContrasena.Text != "" )
-            {           
+            if (txtAgregarUsuarioContrasena.Text == txtAgregarUsuarioContrasenaV.Text && txtAgregarUsuarioUsuario.Text != "" && txtAgregarUsuarioNombre.Text != "" && txtAgregarUsuarioPaterno.Text != "" && txtAgregarUsuarioMaterno.Text != "" && txtAgregarUsuarionivel.Text != "" && txtAgregarUsuarioTelefono.Text != "" && txtAgregarUsuarioDireccion.Text != "" && txtAgregarUsuarioContrasena.Text != "")
+            {
                 foreach (DataRow row in ConsultaUsuarios.BuscarUsuarioLogin().Rows)
                 {
                     if (row[0].ToString() == txtAgregarUsuarioUsuario.Text)
@@ -38,12 +40,12 @@ namespace RentaCar
                         MessageBox.Show(row[0].ToString() + " ya existe");
                         shot = false;
                     }
-                
+
                 }
 
                 if (shot == true)
                 {
-                    ConsultaUsuarios.Insert(txtAgregarUsuarioUsuario.Text,txtAgregarUsuarioNombre.Text,txtAgregarUsuarioPaterno.Text,txtAgregarUsuarioMaterno.Text,txtAgregarUsuarionivel.Text,txtAgregarUsuarioTelefono.Text,txtAgregarUsuarioDireccion.Text,txtAgregarUsuarioContrasena.Text);
+                    ConsultaUsuarios.Insert(txtAgregarUsuarioUsuario.Text, txtAgregarUsuarioNombre.Text, txtAgregarUsuarioPaterno.Text, txtAgregarUsuarioMaterno.Text, txtAgregarUsuarionivel.Text, txtAgregarUsuarioTelefono.Text, txtAgregarUsuarioDireccion.Text, txtAgregarUsuarioContrasena.Text);
                     MessageBox.Show(txtAgregarUsuarioUsuario.Text + "Agregado");
                     txtAgregarUsuarioUsuario.Text = "";
                     txtAgregarUsuarioNombre.Text = "";
@@ -169,7 +171,7 @@ namespace RentaCar
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+
             veiculosTableAdapter ConsultaVel = new veiculosTableAdapter();
             dataEditarAuto.DataSource = ConsultaVel.Buscarmatriculamatricula(txtModificarMatricula.Text);
         }
@@ -227,9 +229,10 @@ namespace RentaCar
         private void btnAgregarUsuarioreserva_Click(object sender, EventArgs e)
         {
             usuariosTableAdapter ConsultaUsuarios = new usuariosTableAdapter();
-            ConsultaUsuarios.Insert("cliente", textBox7.Text, textBox6.Text, textBox5.Text, "cliente", textBox4.Text, textBox3.Text, "NULL");
+            ConsultaUsuarios.Insert(textBox7.Text + textBox4.Text, textBox7.Text, textBox6.Text, textBox5.Text, "cliente", textBox4.Text, textBox3.Text, "NULL");
+
             MessageBox.Show("Se agrego con exito alv compa");
-            textBox2.Text = textBox7.Text;
+            textBox2.Text = textBox7.Text + textBox4.Text;
             textBox3.Text = "";
             textBox4.Text = "";
             textBox5.Text = "";
@@ -241,16 +244,17 @@ namespace RentaCar
         {
             veiculosTableAdapter Consultacar = new veiculosTableAdapter();
             int dias = (dateentrega.Value - daterecogida.Value).Days;
-            int no = (DateTime.Now - dateentrega.Value).Days;
-            if (dias >= 2 && no >=0)
+            int no = (dateentrega.Value - DateTime.Now).Days;
+            MessageBox.Show(no + "---" + dias);
+            if (dias >= 2 && no >= 0)
             {
                 foreach (DataRow row in Consultacar.BuscarVeiculos().Rows)
                 {
-                    if (row[0].ToString() == textBox2.Text)
+                    if (row[0].ToString() == textBox1.Text)
                     {
                         textBox8.Text = row[7].ToString();
                         textBox9.Text = dias.ToString();
-                        textBox10.Text = (Convert.ToUInt16(row[7].ToString()) * dias).ToString();                       
+                        textBox10.Text = (Convert.ToUInt16(row[7].ToString()) * dias).ToString();
 
                     }
 
@@ -266,7 +270,77 @@ namespace RentaCar
         private void btnReserva_Click(object sender, EventArgs e)
         {
             reservasTableAdapter reserva = new reservasTableAdapter();
-            reserva.Insert("");
+            veiculosTableAdapter ConsultaVeiculos = new veiculosTableAdapter();
+            reserva.Insert(textBox7.Text + textBox4.Text, textBox1.Text, daterecogida.Value, dateentrega.Value, textBox8.Text, textBox9.Text, textBox10.Text);
+
+            foreach (DataRow row in ConsultaVeiculos.BuscarVeiculo().Rows)
+            {
+                if (row[0].ToString() == textBox1.Text)
+                {
+                   ConsultaVeiculos.Hola("En uso", textBox1.Text);
+                }
+
+            }
+            MessageBox.Show("Reserva exitosa");
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            FrmBuscarUsuario buscar = new FrmBuscarUsuario();
+            buscar.Show();
+        }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            usuariosTableAdapter ConsultaUsuarios = new usuariosTableAdapter();
+            foreach (DataRow row in ConsultaUsuarios.BuscarUsuarioPorUsuario(txtLoginUsuario.Text).Rows)
+            {
+                if (row[0].ToString() == txtLoginUsuario.Text && row[7].ToString() == txtLoginContrasena.Text)
+                {
+                    
+                    MessageBox.Show("usuario " + row[0].ToString() + " tipo "+ row[4].ToString());
+                    if (row[4].ToString() == "administrador")
+                    {
+                        tabControlAutomoviles.Enabled = true;
+                        tabControlUsuarios.Enabled = true;
+                        tabControlReservas.Enabled = false;
+                    }else if (row[4].ToString() == "vendedor")
+                    {
+                        tabControlAutomoviles.Enabled = false;
+                        tabControlUsuarios.Enabled = false;
+                        tabControlReservas.Enabled = true;
+
+                    }else if (row[4].ToString() == "root")
+                    {
+                        tabControlAutomoviles.Enabled = true;
+                        tabControlUsuarios.Enabled = true;
+                        tabControlReservas.Enabled = true;
+
+                    }
+                    txtLoginContrasena.Enabled = false;
+                    txtLoginUsuario.Enabled = false;
+                }
+
+            }
+
+
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            txtLoginContrasena.Enabled = true;
+            txtLoginUsuario.Enabled = true;
+            txtLoginContrasena.Clear();
+            txtLoginUsuario.Clear();
+            tabControlAutomoviles.Enabled = false;
+            tabControlUsuarios.Enabled = false;
+            tabControlReservas.Enabled = false;
+        }
+
+        private void txtAgregarUsuarioUsuario_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -39,8 +39,37 @@
             this.tabPageReservas = new System.Windows.Forms.TabPage();
             this.tabControlReservas = new System.Windows.Forms.TabControl();
             this.tabAgregarReserva = new System.Windows.Forms.TabPage();
-            this.tabBorrarReserva = new System.Windows.Forms.TabPage();
-            this.tabModificarReserva = new System.Windows.Forms.TabPage();
+            this.btnReserva = new System.Windows.Forms.Button();
+            this.btnAgregarUsuarioreserva = new System.Windows.Forms.Button();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.btnConfirmarReserva = new System.Windows.Forms.Button();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.dateentrega = new System.Windows.Forms.DateTimePicker();
+            this.daterecogida = new System.Windows.Forms.DateTimePicker();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnReservabuscar = new System.Windows.Forms.Button();
             this.tabPageAutomoviles = new System.Windows.Forms.TabPage();
             this.tabControlAutomoviles = new System.Windows.Forms.TabControl();
             this.tabAgregarAutomovil = new System.Windows.Forms.TabPage();
@@ -62,7 +91,20 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.tabEliminarAutomovil = new System.Windows.Forms.TabPage();
+            this.btnBorrarMatricula = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtEliminarMatricula = new System.Windows.Forms.TextBox();
+            this.btnBuscarMatriculaeliminar = new System.Windows.Forms.Button();
             this.tabModificarAutomovil = new System.Windows.Forms.TabPage();
+            this.textmodificarPrecio = new System.Windows.Forms.TextBox();
+            this.comboModificarEstado = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.dataEditarAuto = new System.Windows.Forms.DataGridView();
+            this.btnEditarAutomovil = new System.Windows.Forms.Button();
+            this.txtModificarMatricula = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabPageUsuarios = new System.Windows.Forms.TabPage();
             this.tabControlUsuarios = new System.Windows.Forms.TabControl();
             this.tabAgregarUsuario = new System.Windows.Forms.TabPage();
@@ -86,61 +128,17 @@
             this.txtAgregarUsuarioUsuario = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tabEliminarUsuario = new System.Windows.Forms.TabPage();
+            this.btnUsuariosBorrarUsuario = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtUsuariosBorraUsuario = new System.Windows.Forms.TextBox();
             this.btnUsuariosBuscar = new System.Windows.Forms.Button();
             this.tabModificarUsuario = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtUsuariosBorraUsuario = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.btnUsuariosBorrarUsuario = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txtModificarUsuario = new System.Windows.Forms.TextBox();
-            this.btnEdeitarUsuario = new System.Windows.Forms.Button();
-            this.dataModificaUsuario = new System.Windows.Forms.DataGridView();
             this.btnmodificarGuardar = new System.Windows.Forms.Button();
-            this.btnBorrarMatricula = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtEliminarMatricula = new System.Windows.Forms.TextBox();
-            this.btnBuscarMatriculaeliminar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txtModificarMatricula = new System.Windows.Forms.TextBox();
-            this.btnEditarAutomovil = new System.Windows.Forms.Button();
-            this.dataEditarAuto = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textmodificarPrecio = new System.Windows.Forms.TextBox();
-            this.comboModificarEstado = new System.Windows.Forms.ComboBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.btnReservabuscar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.daterecogida = new System.Windows.Forms.DateTimePicker();
-            this.dateentrega = new System.Windows.Forms.DateTimePicker();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.btnConfirmarReserva = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.btnAgregarUsuarioreserva = new System.Windows.Forms.Button();
-            this.btnReserva = new System.Windows.Forms.Button();
+            this.dataModificaUsuario = new System.Windows.Forms.DataGridView();
+            this.btnEdeitarUsuario = new System.Windows.Forms.Button();
+            this.txtModificarUsuario = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.tabControlPrincipal.SuspendLayout();
             this.tabPageReservas.SuspendLayout();
             this.tabControlReservas.SuspendLayout();
@@ -150,13 +148,13 @@
             this.tabAgregarAutomovil.SuspendLayout();
             this.tabEliminarAutomovil.SuspendLayout();
             this.tabModificarAutomovil.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataEditarAuto)).BeginInit();
             this.tabPageUsuarios.SuspendLayout();
             this.tabControlUsuarios.SuspendLayout();
             this.tabAgregarUsuario.SuspendLayout();
             this.tabEliminarUsuario.SuspendLayout();
             this.tabModificarUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataModificaUsuario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataEditarAuto)).BeginInit();
             this.SuspendLayout();
             // 
             // txtLoginUsuario
@@ -200,6 +198,7 @@
             this.btnLogIn.TabIndex = 4;
             this.btnLogIn.Text = "Acceder";
             this.btnLogIn.UseVisualStyleBackColor = true;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // btnLogOut
             // 
@@ -209,6 +208,7 @@
             this.btnLogOut.TabIndex = 5;
             this.btnLogOut.Text = "Salir";
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // tabControlPrincipal
             // 
@@ -236,8 +236,6 @@
             // 
             this.tabControlReservas.Alignment = System.Windows.Forms.TabAlignment.Left;
             this.tabControlReservas.Controls.Add(this.tabAgregarReserva);
-            this.tabControlReservas.Controls.Add(this.tabBorrarReserva);
-            this.tabControlReservas.Controls.Add(this.tabModificarReserva);
             this.tabControlReservas.Location = new System.Drawing.Point(3, 3);
             this.tabControlReservas.Multiline = true;
             this.tabControlReservas.Name = "tabControlReservas";
@@ -287,24 +285,272 @@
             this.tabAgregarReserva.UseVisualStyleBackColor = true;
             this.tabAgregarReserva.Click += new System.EventHandler(this.tabAgregarReserva_Click);
             // 
-            // tabBorrarReserva
+            // btnReserva
             // 
-            this.tabBorrarReserva.Location = new System.Drawing.Point(23, 4);
-            this.tabBorrarReserva.Name = "tabBorrarReserva";
-            this.tabBorrarReserva.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBorrarReserva.Size = new System.Drawing.Size(758, 496);
-            this.tabBorrarReserva.TabIndex = 1;
-            this.tabBorrarReserva.Text = "Borrar";
-            this.tabBorrarReserva.UseVisualStyleBackColor = true;
+            this.btnReserva.Location = new System.Drawing.Point(523, 228);
+            this.btnReserva.Name = "btnReserva";
+            this.btnReserva.Size = new System.Drawing.Size(100, 23);
+            this.btnReserva.TabIndex = 34;
+            this.btnReserva.Text = "Reserva";
+            this.btnReserva.UseVisualStyleBackColor = true;
+            this.btnReserva.Click += new System.EventHandler(this.btnReserva_Click);
             // 
-            // tabModificarReserva
+            // btnAgregarUsuarioreserva
             // 
-            this.tabModificarReserva.Location = new System.Drawing.Point(23, 4);
-            this.tabModificarReserva.Name = "tabModificarReserva";
-            this.tabModificarReserva.Size = new System.Drawing.Size(758, 496);
-            this.tabModificarReserva.TabIndex = 2;
-            this.tabModificarReserva.Text = "Modificar";
-            this.tabModificarReserva.UseVisualStyleBackColor = true;
+            this.btnAgregarUsuarioreserva.Location = new System.Drawing.Point(92, 261);
+            this.btnAgregarUsuarioreserva.Name = "btnAgregarUsuarioreserva";
+            this.btnAgregarUsuarioreserva.Size = new System.Drawing.Size(95, 23);
+            this.btnAgregarUsuarioreserva.TabIndex = 33;
+            this.btnAgregarUsuarioreserva.Text = "Agregar";
+            this.btnAgregarUsuarioreserva.UseVisualStyleBackColor = true;
+            this.btnAgregarUsuarioreserva.Click += new System.EventHandler(this.btnAgregarUsuarioreserva_Click);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(476, 209);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(34, 13);
+            this.label37.TabIndex = 32;
+            this.label37.Text = "Total:";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(479, 183);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(31, 13);
+            this.label36.TabIndex = 31;
+            this.label36.Text = "Dias:";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(445, 153);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(65, 13);
+            this.label35.TabIndex = 30;
+            this.label35.Text = "Precio x dia:";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Enabled = false;
+            this.textBox10.Location = new System.Drawing.Point(523, 202);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 20);
+            this.textBox10.TabIndex = 29;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Enabled = false;
+            this.textBox9.Location = new System.Drawing.Point(523, 176);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 28;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Enabled = false;
+            this.textBox8.Location = new System.Drawing.Point(523, 150);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 27;
+            // 
+            // btnConfirmarReserva
+            // 
+            this.btnConfirmarReserva.Location = new System.Drawing.Point(232, 235);
+            this.btnConfirmarReserva.Name = "btnConfirmarReserva";
+            this.btnConfirmarReserva.Size = new System.Drawing.Size(200, 23);
+            this.btnConfirmarReserva.TabIndex = 26;
+            this.btnConfirmarReserva.Text = "Confirmar";
+            this.btnConfirmarReserva.UseVisualStyleBackColor = true;
+            this.btnConfirmarReserva.Click += new System.EventHandler(this.btnConfirmarReserva_Click);
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(229, 186);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(97, 13);
+            this.label34.TabIndex = 25;
+            this.label34.Text = "Fecha de entrega: ";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(229, 141);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(104, 13);
+            this.label33.TabIndex = 24;
+            this.label33.Text = "Fecha de Recogida:";
+            // 
+            // dateentrega
+            // 
+            this.dateentrega.Location = new System.Drawing.Point(232, 202);
+            this.dateentrega.Name = "dateentrega";
+            this.dateentrega.Size = new System.Drawing.Size(200, 20);
+            this.dateentrega.TabIndex = 23;
+            // 
+            // daterecogida
+            // 
+            this.daterecogida.Location = new System.Drawing.Point(232, 157);
+            this.daterecogida.Name = "daterecogida";
+            this.daterecogida.Size = new System.Drawing.Size(200, 20);
+            this.daterecogida.TabIndex = 22;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(92, 235);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 21;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(31, 235);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(55, 13);
+            this.label28.TabIndex = 20;
+            this.label28.Text = "Direccion:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(92, 209);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 19;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(39, 209);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(48, 13);
+            this.label29.TabIndex = 18;
+            this.label29.Text = "telefono:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(92, 183);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 17;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(39, 183);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(49, 13);
+            this.label30.TabIndex = 16;
+            this.label30.Text = "Materno:";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(92, 157);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 15;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(39, 157);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(47, 13);
+            this.label31.TabIndex = 14;
+            this.label31.Text = "Paterno:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(92, 131);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 13;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(39, 131);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(47, 13);
+            this.label32.TabIndex = 12;
+            this.label32.Text = "Nombre:";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(306, 97);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(42, 13);
+            this.label27.TabIndex = 7;
+            this.label27.Text = "Cliente:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(354, 95);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 6;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(206, 92);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(94, 23);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Buscar Cliente";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(39, 92);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(42, 13);
+            this.label26.TabIndex = 4;
+            this.label26.Text = "Cliente:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "",
+            "existente",
+            "nuevo"});
+            this.comboBox1.Location = new System.Drawing.Point(92, 89);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(100, 21);
+            this.comboBox1.TabIndex = 3;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(28, 49);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(53, 13);
+            this.label25.TabIndex = 2;
+            this.label25.Text = "Matricula:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(87, 46);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 1;
+            // 
+            // btnReservabuscar
+            // 
+            this.btnReservabuscar.Location = new System.Drawing.Point(92, 17);
+            this.btnReservabuscar.Name = "btnReservabuscar";
+            this.btnReservabuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnReservabuscar.TabIndex = 0;
+            this.btnReservabuscar.Text = "Automoviles disponibles";
+            this.btnReservabuscar.UseVisualStyleBackColor = true;
+            this.btnReservabuscar.Click += new System.EventHandler(this.btnReservabuscar_Click);
             // 
             // tabPageAutomoviles
             // 
@@ -555,6 +801,42 @@
             this.tabEliminarAutomovil.Text = "Eliminar";
             this.tabEliminarAutomovil.UseVisualStyleBackColor = true;
             // 
+            // btnBorrarMatricula
+            // 
+            this.btnBorrarMatricula.Location = new System.Drawing.Point(182, 34);
+            this.btnBorrarMatricula.Name = "btnBorrarMatricula";
+            this.btnBorrarMatricula.Size = new System.Drawing.Size(100, 23);
+            this.btnBorrarMatricula.TabIndex = 7;
+            this.btnBorrarMatricula.Text = "Borrar";
+            this.btnBorrarMatricula.UseVisualStyleBackColor = true;
+            this.btnBorrarMatricula.Click += new System.EventHandler(this.btnBorrarMatricula_Click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(123, 11);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(53, 13);
+            this.label22.TabIndex = 6;
+            this.label22.Text = "Matricula:";
+            // 
+            // txtEliminarMatricula
+            // 
+            this.txtEliminarMatricula.Location = new System.Drawing.Point(182, 8);
+            this.txtEliminarMatricula.Name = "txtEliminarMatricula";
+            this.txtEliminarMatricula.Size = new System.Drawing.Size(100, 20);
+            this.txtEliminarMatricula.TabIndex = 5;
+            // 
+            // btnBuscarMatriculaeliminar
+            // 
+            this.btnBuscarMatriculaeliminar.Location = new System.Drawing.Point(6, 6);
+            this.btnBuscarMatriculaeliminar.Name = "btnBuscarMatriculaeliminar";
+            this.btnBuscarMatriculaeliminar.Size = new System.Drawing.Size(111, 23);
+            this.btnBuscarMatriculaeliminar.TabIndex = 4;
+            this.btnBuscarMatriculaeliminar.Text = "Buscar Matricula";
+            this.btnBuscarMatriculaeliminar.UseVisualStyleBackColor = true;
+            this.btnBuscarMatriculaeliminar.Click += new System.EventHandler(this.btnBuscarMatriculaeliminar_Click);
+            // 
             // tabModificarAutomovil
             // 
             this.tabModificarAutomovil.Controls.Add(this.textmodificarPrecio);
@@ -572,6 +854,91 @@
             this.tabModificarAutomovil.TabIndex = 2;
             this.tabModificarAutomovil.Text = "Modificar";
             this.tabModificarAutomovil.UseVisualStyleBackColor = true;
+            // 
+            // textmodificarPrecio
+            // 
+            this.textmodificarPrecio.Location = new System.Drawing.Point(64, 197);
+            this.textmodificarPrecio.Name = "textmodificarPrecio";
+            this.textmodificarPrecio.Size = new System.Drawing.Size(121, 20);
+            this.textmodificarPrecio.TabIndex = 37;
+            // 
+            // comboModificarEstado
+            // 
+            this.comboModificarEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboModificarEstado.FormattingEnabled = true;
+            this.comboModificarEstado.Items.AddRange(new object[] {
+            "",
+            "Libre",
+            "En uso",
+            "En taller"});
+            this.comboModificarEstado.Location = new System.Drawing.Point(64, 170);
+            this.comboModificarEstado.Name = "comboModificarEstado";
+            this.comboModificarEstado.Size = new System.Drawing.Size(121, 21);
+            this.comboModificarEstado.TabIndex = 36;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(18, 204);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(40, 13);
+            this.label23.TabIndex = 35;
+            this.label23.Text = "Precio:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(15, 178);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(43, 13);
+            this.label24.TabIndex = 34;
+            this.label24.Text = "Estado:";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(61, 223);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(124, 23);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Guardar Cambios";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // dataEditarAuto
+            // 
+            this.dataEditarAuto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataEditarAuto.Location = new System.Drawing.Point(3, 35);
+            this.dataEditarAuto.Name = "dataEditarAuto";
+            this.dataEditarAuto.ReadOnly = true;
+            this.dataEditarAuto.Size = new System.Drawing.Size(741, 120);
+            this.dataEditarAuto.TabIndex = 3;
+            // 
+            // btnEditarAutomovil
+            // 
+            this.btnEditarAutomovil.Location = new System.Drawing.Point(227, 6);
+            this.btnEditarAutomovil.Name = "btnEditarAutomovil";
+            this.btnEditarAutomovil.Size = new System.Drawing.Size(100, 23);
+            this.btnEditarAutomovil.TabIndex = 2;
+            this.btnEditarAutomovil.Text = "Editar Automovil";
+            this.btnEditarAutomovil.UseVisualStyleBackColor = true;
+            this.btnEditarAutomovil.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // txtModificarMatricula
+            // 
+            this.txtModificarMatricula.Location = new System.Drawing.Point(121, 6);
+            this.txtModificarMatricula.Name = "txtModificarMatricula";
+            this.txtModificarMatricula.Size = new System.Drawing.Size(100, 20);
+            this.txtModificarMatricula.TabIndex = 1;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(3, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(112, 23);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Buscar Matricula";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tabPageUsuarios
             // 
@@ -778,6 +1145,7 @@
             this.txtAgregarUsuarioUsuario.Name = "txtAgregarUsuarioUsuario";
             this.txtAgregarUsuarioUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtAgregarUsuarioUsuario.TabIndex = 1;
+            this.txtAgregarUsuarioUsuario.TextChanged += new System.EventHandler(this.txtAgregarUsuarioUsuario_TextChanged);
             // 
             // label4
             // 
@@ -801,6 +1169,32 @@
             this.tabEliminarUsuario.TabIndex = 1;
             this.tabEliminarUsuario.Text = "Eliminar";
             this.tabEliminarUsuario.UseVisualStyleBackColor = true;
+            // 
+            // btnUsuariosBorrarUsuario
+            // 
+            this.btnUsuariosBorrarUsuario.Location = new System.Drawing.Point(156, 39);
+            this.btnUsuariosBorrarUsuario.Name = "btnUsuariosBorrarUsuario";
+            this.btnUsuariosBorrarUsuario.Size = new System.Drawing.Size(100, 23);
+            this.btnUsuariosBorrarUsuario.TabIndex = 3;
+            this.btnUsuariosBorrarUsuario.Text = "Borrar";
+            this.btnUsuariosBorrarUsuario.UseVisualStyleBackColor = true;
+            this.btnUsuariosBorrarUsuario.Click += new System.EventHandler(this.btnUsuariosBorrarUsuario_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(104, 16);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(46, 13);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Usuario:";
+            // 
+            // txtUsuariosBorraUsuario
+            // 
+            this.txtUsuariosBorraUsuario.Location = new System.Drawing.Point(156, 13);
+            this.txtUsuariosBorraUsuario.Name = "txtUsuariosBorraUsuario";
+            this.txtUsuariosBorraUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtUsuariosBorraUsuario.TabIndex = 1;
             // 
             // btnUsuariosBuscar
             // 
@@ -826,58 +1220,23 @@
             this.tabModificarUsuario.Text = "Modificar";
             this.tabModificarUsuario.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // btnmodificarGuardar
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(233, 28);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "RentaCarSytem © 2017";
+            this.btnmodificarGuardar.Location = new System.Drawing.Point(12, 113);
+            this.btnmodificarGuardar.Name = "btnmodificarGuardar";
+            this.btnmodificarGuardar.Size = new System.Drawing.Size(116, 23);
+            this.btnmodificarGuardar.TabIndex = 4;
+            this.btnmodificarGuardar.Text = "Guardar Cambios";
+            this.btnmodificarGuardar.UseVisualStyleBackColor = true;
+            this.btnmodificarGuardar.Click += new System.EventHandler(this.btnmodificarGuardar_Click);
             // 
-            // txtUsuariosBorraUsuario
+            // dataModificaUsuario
             // 
-            this.txtUsuariosBorraUsuario.Location = new System.Drawing.Point(156, 13);
-            this.txtUsuariosBorraUsuario.Name = "txtUsuariosBorraUsuario";
-            this.txtUsuariosBorraUsuario.Size = new System.Drawing.Size(100, 20);
-            this.txtUsuariosBorraUsuario.TabIndex = 1;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(104, 16);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(46, 13);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Usuario:";
-            // 
-            // btnUsuariosBorrarUsuario
-            // 
-            this.btnUsuariosBorrarUsuario.Location = new System.Drawing.Point(156, 39);
-            this.btnUsuariosBorrarUsuario.Name = "btnUsuariosBorrarUsuario";
-            this.btnUsuariosBorrarUsuario.Size = new System.Drawing.Size(100, 23);
-            this.btnUsuariosBorrarUsuario.TabIndex = 3;
-            this.btnUsuariosBorrarUsuario.Text = "Borrar";
-            this.btnUsuariosBorrarUsuario.UseVisualStyleBackColor = true;
-            this.btnUsuariosBorrarUsuario.Click += new System.EventHandler(this.btnUsuariosBorrarUsuario_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Buscar usuario";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // txtModificarUsuario
-            // 
-            this.txtModificarUsuario.Location = new System.Drawing.Point(134, 6);
-            this.txtModificarUsuario.Name = "txtModificarUsuario";
-            this.txtModificarUsuario.Size = new System.Drawing.Size(100, 20);
-            this.txtModificarUsuario.TabIndex = 1;
+            this.dataModificaUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataModificaUsuario.Location = new System.Drawing.Point(12, 35);
+            this.dataModificaUsuario.Name = "dataModificaUsuario";
+            this.dataModificaUsuario.Size = new System.Drawing.Size(732, 72);
+            this.dataModificaUsuario.TabIndex = 3;
             // 
             // btnEdeitarUsuario
             // 
@@ -889,411 +1248,32 @@
             this.btnEdeitarUsuario.UseVisualStyleBackColor = true;
             this.btnEdeitarUsuario.Click += new System.EventHandler(this.btnEdeitarUsuario_Click);
             // 
-            // dataModificaUsuario
-            // 
-            this.dataModificaUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataModificaUsuario.Location = new System.Drawing.Point(12, 35);
-            this.dataModificaUsuario.Name = "dataModificaUsuario";
-            this.dataModificaUsuario.Size = new System.Drawing.Size(732, 72);
-            this.dataModificaUsuario.TabIndex = 3;
-            // 
-            // btnmodificarGuardar
-            // 
-            this.btnmodificarGuardar.Location = new System.Drawing.Point(12, 113);
-            this.btnmodificarGuardar.Name = "btnmodificarGuardar";
-            this.btnmodificarGuardar.Size = new System.Drawing.Size(116, 23);
-            this.btnmodificarGuardar.TabIndex = 4;
-            this.btnmodificarGuardar.Text = "Guardar Cambios";
-            this.btnmodificarGuardar.UseVisualStyleBackColor = true;
-            this.btnmodificarGuardar.Click += new System.EventHandler(this.btnmodificarGuardar_Click);
-            // 
-            // btnBorrarMatricula
-            // 
-            this.btnBorrarMatricula.Location = new System.Drawing.Point(182, 34);
-            this.btnBorrarMatricula.Name = "btnBorrarMatricula";
-            this.btnBorrarMatricula.Size = new System.Drawing.Size(100, 23);
-            this.btnBorrarMatricula.TabIndex = 7;
-            this.btnBorrarMatricula.Text = "Borrar";
-            this.btnBorrarMatricula.UseVisualStyleBackColor = true;
-            this.btnBorrarMatricula.Click += new System.EventHandler(this.btnBorrarMatricula_Click);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(123, 11);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(53, 13);
-            this.label22.TabIndex = 6;
-            this.label22.Text = "Matricula:";
-            // 
-            // txtEliminarMatricula
-            // 
-            this.txtEliminarMatricula.Location = new System.Drawing.Point(182, 8);
-            this.txtEliminarMatricula.Name = "txtEliminarMatricula";
-            this.txtEliminarMatricula.Size = new System.Drawing.Size(100, 20);
-            this.txtEliminarMatricula.TabIndex = 5;
-            // 
-            // btnBuscarMatriculaeliminar
-            // 
-            this.btnBuscarMatriculaeliminar.Location = new System.Drawing.Point(6, 6);
-            this.btnBuscarMatriculaeliminar.Name = "btnBuscarMatriculaeliminar";
-            this.btnBuscarMatriculaeliminar.Size = new System.Drawing.Size(111, 23);
-            this.btnBuscarMatriculaeliminar.TabIndex = 4;
-            this.btnBuscarMatriculaeliminar.Text = "Buscar Matricula";
-            this.btnBuscarMatriculaeliminar.UseVisualStyleBackColor = true;
-            this.btnBuscarMatriculaeliminar.Click += new System.EventHandler(this.btnBuscarMatriculaeliminar_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(3, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Buscar Matricula";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // txtModificarMatricula
-            // 
-            this.txtModificarMatricula.Location = new System.Drawing.Point(121, 6);
-            this.txtModificarMatricula.Name = "txtModificarMatricula";
-            this.txtModificarMatricula.Size = new System.Drawing.Size(100, 20);
-            this.txtModificarMatricula.TabIndex = 1;
-            // 
-            // btnEditarAutomovil
-            // 
-            this.btnEditarAutomovil.Location = new System.Drawing.Point(227, 6);
-            this.btnEditarAutomovil.Name = "btnEditarAutomovil";
-            this.btnEditarAutomovil.Size = new System.Drawing.Size(100, 23);
-            this.btnEditarAutomovil.TabIndex = 2;
-            this.btnEditarAutomovil.Text = "Editar Automovil";
-            this.btnEditarAutomovil.UseVisualStyleBackColor = true;
-            this.btnEditarAutomovil.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // dataEditarAuto
-            // 
-            this.dataEditarAuto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataEditarAuto.Location = new System.Drawing.Point(3, 35);
-            this.dataEditarAuto.Name = "dataEditarAuto";
-            this.dataEditarAuto.ReadOnly = true;
-            this.dataEditarAuto.Size = new System.Drawing.Size(741, 120);
-            this.dataEditarAuto.TabIndex = 3;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(61, 223);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(124, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Guardar Cambios";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // textmodificarPrecio
-            // 
-            this.textmodificarPrecio.Location = new System.Drawing.Point(64, 197);
-            this.textmodificarPrecio.Name = "textmodificarPrecio";
-            this.textmodificarPrecio.Size = new System.Drawing.Size(121, 20);
-            this.textmodificarPrecio.TabIndex = 37;
-            // 
-            // comboModificarEstado
-            // 
-            this.comboModificarEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboModificarEstado.FormattingEnabled = true;
-            this.comboModificarEstado.Items.AddRange(new object[] {
-            "",
-            "Libre",
-            "En uso",
-            "En taller"});
-            this.comboModificarEstado.Location = new System.Drawing.Point(64, 170);
-            this.comboModificarEstado.Name = "comboModificarEstado";
-            this.comboModificarEstado.Size = new System.Drawing.Size(121, 21);
-            this.comboModificarEstado.TabIndex = 36;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(18, 204);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(40, 13);
-            this.label23.TabIndex = 35;
-            this.label23.Text = "Precio:";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(15, 178);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(43, 13);
-            this.label24.TabIndex = 34;
-            this.label24.Text = "Estado:";
-            // 
-            // btnReservabuscar
-            // 
-            this.btnReservabuscar.Location = new System.Drawing.Point(92, 17);
-            this.btnReservabuscar.Name = "btnReservabuscar";
-            this.btnReservabuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnReservabuscar.TabIndex = 0;
-            this.btnReservabuscar.Text = "Automoviles disponibles";
-            this.btnReservabuscar.UseVisualStyleBackColor = true;
-            this.btnReservabuscar.Click += new System.EventHandler(this.btnReservabuscar_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(87, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(28, 49);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(53, 13);
-            this.label25.TabIndex = 2;
-            this.label25.Text = "Matricula:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "",
-            "existente",
-            "nuevo"});
-            this.comboBox1.Location = new System.Drawing.Point(92, 89);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(39, 92);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(42, 13);
-            this.label26.TabIndex = 4;
-            this.label26.Text = "Cliente:";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(206, 92);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Buscar Cliente";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(354, 95);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(306, 97);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(42, 13);
-            this.label27.TabIndex = 7;
-            this.label27.Text = "Cliente:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(92, 235);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 21;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(31, 235);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(55, 13);
-            this.label28.TabIndex = 20;
-            this.label28.Text = "Direccion:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(92, 209);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 19;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(39, 209);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(48, 13);
-            this.label29.TabIndex = 18;
-            this.label29.Text = "telefono:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(92, 183);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 17;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(39, 183);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(49, 13);
-            this.label30.TabIndex = 16;
-            this.label30.Text = "Materno:";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(92, 157);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 15;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(39, 157);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(47, 13);
-            this.label31.TabIndex = 14;
-            this.label31.Text = "Paterno:";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(92, 131);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 13;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(39, 131);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(47, 13);
-            this.label32.TabIndex = 12;
-            this.label32.Text = "Nombre:";
-            // 
-            // daterecogida
-            // 
-            this.daterecogida.Location = new System.Drawing.Point(232, 157);
-            this.daterecogida.Name = "daterecogida";
-            this.daterecogida.Size = new System.Drawing.Size(200, 20);
-            this.daterecogida.TabIndex = 22;
-            // 
-            // dateentrega
-            // 
-            this.dateentrega.Location = new System.Drawing.Point(232, 202);
-            this.dateentrega.Name = "dateentrega";
-            this.dateentrega.Size = new System.Drawing.Size(200, 20);
-            this.dateentrega.TabIndex = 23;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(229, 141);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(104, 13);
-            this.label33.TabIndex = 24;
-            this.label33.Text = "Fecha de Recogida:";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(229, 186);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(97, 13);
-            this.label34.TabIndex = 25;
-            this.label34.Text = "Fecha de entrega: ";
-            // 
-            // btnConfirmarReserva
-            // 
-            this.btnConfirmarReserva.Location = new System.Drawing.Point(232, 235);
-            this.btnConfirmarReserva.Name = "btnConfirmarReserva";
-            this.btnConfirmarReserva.Size = new System.Drawing.Size(200, 23);
-            this.btnConfirmarReserva.TabIndex = 26;
-            this.btnConfirmarReserva.Text = "Confirmar";
-            this.btnConfirmarReserva.UseVisualStyleBackColor = true;
-            this.btnConfirmarReserva.Click += new System.EventHandler(this.btnConfirmarReserva_Click);
-            // 
-            // textBox8
-            // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(523, 150);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 27;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(523, 176);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 28;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Enabled = false;
-            this.textBox10.Location = new System.Drawing.Point(523, 202);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 29;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(445, 153);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(65, 13);
-            this.label35.TabIndex = 30;
-            this.label35.Text = "Precio x dia:";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(479, 183);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(31, 13);
-            this.label36.TabIndex = 31;
-            this.label36.Text = "Dias:";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(476, 209);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(34, 13);
-            this.label37.TabIndex = 32;
-            this.label37.Text = "Total:";
-            // 
-            // btnAgregarUsuarioreserva
-            // 
-            this.btnAgregarUsuarioreserva.Location = new System.Drawing.Point(92, 261);
-            this.btnAgregarUsuarioreserva.Name = "btnAgregarUsuarioreserva";
-            this.btnAgregarUsuarioreserva.Size = new System.Drawing.Size(95, 23);
-            this.btnAgregarUsuarioreserva.TabIndex = 33;
-            this.btnAgregarUsuarioreserva.Text = "Agregar";
-            this.btnAgregarUsuarioreserva.UseVisualStyleBackColor = true;
-            this.btnAgregarUsuarioreserva.Click += new System.EventHandler(this.btnAgregarUsuarioreserva_Click);
-            // 
-            // btnReserva
-            // 
-            this.btnReserva.Location = new System.Drawing.Point(523, 228);
-            this.btnReserva.Name = "btnReserva";
-            this.btnReserva.Size = new System.Drawing.Size(100, 23);
-            this.btnReserva.TabIndex = 34;
-            this.btnReserva.Text = "Reserva";
-            this.btnReserva.UseVisualStyleBackColor = true;
-            this.btnReserva.Click += new System.EventHandler(this.btnReserva_Click);
+            // txtModificarUsuario
+            // 
+            this.txtModificarUsuario.Location = new System.Drawing.Point(134, 6);
+            this.txtModificarUsuario.Name = "txtModificarUsuario";
+            this.txtModificarUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtModificarUsuario.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Buscar usuario";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(233, 28);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "RentaCarSytem © 2017";
             // 
             // RentaCar
             // 
@@ -1327,6 +1307,7 @@
             this.tabEliminarAutomovil.PerformLayout();
             this.tabModificarAutomovil.ResumeLayout(false);
             this.tabModificarAutomovil.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataEditarAuto)).EndInit();
             this.tabPageUsuarios.ResumeLayout(false);
             this.tabControlUsuarios.ResumeLayout(false);
             this.tabAgregarUsuario.ResumeLayout(false);
@@ -1336,7 +1317,6 @@
             this.tabModificarUsuario.ResumeLayout(false);
             this.tabModificarUsuario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataModificaUsuario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataEditarAuto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1354,8 +1334,6 @@
         private System.Windows.Forms.TabPage tabPageReservas;
         private System.Windows.Forms.TabControl tabControlReservas;
         private System.Windows.Forms.TabPage tabAgregarReserva;
-        private System.Windows.Forms.TabPage tabBorrarReserva;
-        private System.Windows.Forms.TabPage tabModificarReserva;
         private System.Windows.Forms.TabPage tabPageAutomoviles;
         private System.Windows.Forms.TabControl tabControlAutomoviles;
         private System.Windows.Forms.TabPage tabAgregarAutomovil;
