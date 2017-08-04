@@ -140,5 +140,60 @@ namespace RentaCar
             txtModificarUsuario.Enabled = true;
             txtModificarUsuario.Text = "";
         }
+
+        private void btnBuscarMatriculaeliminar_Click(object sender, EventArgs e)
+        {
+            FrmBuscarMatricula buscarmatricula = new FrmBuscarMatricula();
+            buscarmatricula.Show();
+        }
+
+        private void btnBorrarMatricula_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                veiculosTableAdapter ConsultaUsuarios = new veiculosTableAdapter();
+                ConsultaUsuarios.Borrarmatricula(txtEliminarMatricula.Text);
+                MessageBox.Show("Se elimino con exito");
+            }
+            catch
+            {
+                MessageBox.Show("Error");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmBuscarMatricula buscarmatricula = new FrmBuscarMatricula();
+            buscarmatricula.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+            veiculosTableAdapter ConsultaVel = new veiculosTableAdapter();
+            dataEditarAuto.DataSource = ConsultaVel.Buscarmatriculamatricula(txtModificarMatricula.Text);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                veiculosTableAdapter ConsultaVel = new veiculosTableAdapter();
+                ConsultaVel.ModificarVel(txtModificarMatricula.Text, dataEditarAuto[1, 0].Value.ToString(), dataEditarAuto[2, 0].Value.ToString(), dataEditarAuto[3, 0].Value.ToString(), dataEditarAuto[4, 0].Value.ToString(), dataEditarAuto[5, 0].Value.ToString(), comboModificarEstado.Text, textmodificarPrecio.Text, txtModificarMatricula.Text);
+                dataEditarAuto.DataSource = ConsultaVel.Buscarmatriculamatricula(txtModificarMatricula.Text);
+                MessageBox.Show("Se modifico con exito la matricula " + txtModificarMatricula.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Error");
+            }
+
+        }
+
+        private void btnReservabuscar_Click(object sender, EventArgs e)
+        {
+            FrmBuscarMatricula buscarmatricula = new FrmBuscarMatricula();
+            buscarmatricula.Show();
+        }
     }
 }

@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmBuscarMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarMatricula.Designer.cs">
+      <DependentUpon>FrmBuscarMatricula.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBuscarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RentaCarDataBaseDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmBuscarMatricula.resx">
+      <DependentUpon>FrmBuscarMatricula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBuscarUsuario.resx">
       <DependentUpon>FrmBuscarUsuario.cs</DependentUpon>
     </EmbeddedResource>

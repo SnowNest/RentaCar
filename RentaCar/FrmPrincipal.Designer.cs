@@ -97,18 +97,38 @@
             this.btnEdeitarUsuario = new System.Windows.Forms.Button();
             this.dataModificaUsuario = new System.Windows.Forms.DataGridView();
             this.btnmodificarGuardar = new System.Windows.Forms.Button();
+            this.btnBorrarMatricula = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtEliminarMatricula = new System.Windows.Forms.TextBox();
+            this.btnBuscarMatriculaeliminar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtModificarMatricula = new System.Windows.Forms.TextBox();
+            this.btnEditarAutomovil = new System.Windows.Forms.Button();
+            this.dataEditarAuto = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textmodificarPrecio = new System.Windows.Forms.TextBox();
+            this.comboModificarEstado = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.btnReservabuscar = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.tabControlPrincipal.SuspendLayout();
             this.tabPageReservas.SuspendLayout();
             this.tabControlReservas.SuspendLayout();
+            this.tabAgregarReserva.SuspendLayout();
             this.tabPageAutomoviles.SuspendLayout();
             this.tabControlAutomoviles.SuspendLayout();
             this.tabAgregarAutomovil.SuspendLayout();
+            this.tabEliminarAutomovil.SuspendLayout();
+            this.tabModificarAutomovil.SuspendLayout();
             this.tabPageUsuarios.SuspendLayout();
             this.tabControlUsuarios.SuspendLayout();
             this.tabAgregarUsuario.SuspendLayout();
             this.tabEliminarUsuario.SuspendLayout();
             this.tabModificarUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataModificaUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataEditarAuto)).BeginInit();
             this.SuspendLayout();
             // 
             // txtLoginUsuario
@@ -199,6 +219,9 @@
             // 
             // tabAgregarReserva
             // 
+            this.tabAgregarReserva.Controls.Add(this.label25);
+            this.tabAgregarReserva.Controls.Add(this.textBox1);
+            this.tabAgregarReserva.Controls.Add(this.btnReservabuscar);
             this.tabAgregarReserva.Location = new System.Drawing.Point(23, 4);
             this.tabAgregarReserva.Name = "tabAgregarReserva";
             this.tabAgregarReserva.Padding = new System.Windows.Forms.Padding(3);
@@ -464,6 +487,10 @@
             // 
             // tabEliminarAutomovil
             // 
+            this.tabEliminarAutomovil.Controls.Add(this.btnBorrarMatricula);
+            this.tabEliminarAutomovil.Controls.Add(this.label22);
+            this.tabEliminarAutomovil.Controls.Add(this.txtEliminarMatricula);
+            this.tabEliminarAutomovil.Controls.Add(this.btnBuscarMatriculaeliminar);
             this.tabEliminarAutomovil.Location = new System.Drawing.Point(23, 4);
             this.tabEliminarAutomovil.Name = "tabEliminarAutomovil";
             this.tabEliminarAutomovil.Padding = new System.Windows.Forms.Padding(3);
@@ -474,6 +501,15 @@
             // 
             // tabModificarAutomovil
             // 
+            this.tabModificarAutomovil.Controls.Add(this.textmodificarPrecio);
+            this.tabModificarAutomovil.Controls.Add(this.comboModificarEstado);
+            this.tabModificarAutomovil.Controls.Add(this.label23);
+            this.tabModificarAutomovil.Controls.Add(this.label24);
+            this.tabModificarAutomovil.Controls.Add(this.button4);
+            this.tabModificarAutomovil.Controls.Add(this.dataEditarAuto);
+            this.tabModificarAutomovil.Controls.Add(this.btnEditarAutomovil);
+            this.tabModificarAutomovil.Controls.Add(this.txtModificarMatricula);
+            this.tabModificarAutomovil.Controls.Add(this.button2);
             this.tabModificarAutomovil.Location = new System.Drawing.Point(23, 4);
             this.tabModificarAutomovil.Name = "tabModificarAutomovil";
             this.tabModificarAutomovil.Size = new System.Drawing.Size(758, 496);
@@ -570,6 +606,7 @@
             // 
             this.txtAgregarUsuarioContrasenaV.Location = new System.Drawing.Point(75, 209);
             this.txtAgregarUsuarioContrasenaV.Name = "txtAgregarUsuarioContrasenaV";
+            this.txtAgregarUsuarioContrasenaV.PasswordChar = '*';
             this.txtAgregarUsuarioContrasenaV.Size = new System.Drawing.Size(100, 20);
             this.txtAgregarUsuarioContrasenaV.TabIndex = 15;
             // 
@@ -586,6 +623,7 @@
             // 
             this.txtAgregarUsuarioContrasena.Location = new System.Drawing.Point(75, 183);
             this.txtAgregarUsuarioContrasena.Name = "txtAgregarUsuarioContrasena";
+            this.txtAgregarUsuarioContrasena.PasswordChar = '*';
             this.txtAgregarUsuarioContrasena.Size = new System.Drawing.Size(100, 20);
             this.txtAgregarUsuarioContrasena.TabIndex = 13;
             // 
@@ -813,6 +851,153 @@
             this.btnmodificarGuardar.UseVisualStyleBackColor = true;
             this.btnmodificarGuardar.Click += new System.EventHandler(this.btnmodificarGuardar_Click);
             // 
+            // btnBorrarMatricula
+            // 
+            this.btnBorrarMatricula.Location = new System.Drawing.Point(182, 34);
+            this.btnBorrarMatricula.Name = "btnBorrarMatricula";
+            this.btnBorrarMatricula.Size = new System.Drawing.Size(100, 23);
+            this.btnBorrarMatricula.TabIndex = 7;
+            this.btnBorrarMatricula.Text = "Borrar";
+            this.btnBorrarMatricula.UseVisualStyleBackColor = true;
+            this.btnBorrarMatricula.Click += new System.EventHandler(this.btnBorrarMatricula_Click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(123, 11);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(53, 13);
+            this.label22.TabIndex = 6;
+            this.label22.Text = "Matricula:";
+            // 
+            // txtEliminarMatricula
+            // 
+            this.txtEliminarMatricula.Location = new System.Drawing.Point(182, 8);
+            this.txtEliminarMatricula.Name = "txtEliminarMatricula";
+            this.txtEliminarMatricula.Size = new System.Drawing.Size(100, 20);
+            this.txtEliminarMatricula.TabIndex = 5;
+            // 
+            // btnBuscarMatriculaeliminar
+            // 
+            this.btnBuscarMatriculaeliminar.Location = new System.Drawing.Point(6, 6);
+            this.btnBuscarMatriculaeliminar.Name = "btnBuscarMatriculaeliminar";
+            this.btnBuscarMatriculaeliminar.Size = new System.Drawing.Size(111, 23);
+            this.btnBuscarMatriculaeliminar.TabIndex = 4;
+            this.btnBuscarMatriculaeliminar.Text = "Buscar Matricula";
+            this.btnBuscarMatriculaeliminar.UseVisualStyleBackColor = true;
+            this.btnBuscarMatriculaeliminar.Click += new System.EventHandler(this.btnBuscarMatriculaeliminar_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(3, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(112, 23);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Buscar Matricula";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtModificarMatricula
+            // 
+            this.txtModificarMatricula.Location = new System.Drawing.Point(121, 6);
+            this.txtModificarMatricula.Name = "txtModificarMatricula";
+            this.txtModificarMatricula.Size = new System.Drawing.Size(100, 20);
+            this.txtModificarMatricula.TabIndex = 1;
+            // 
+            // btnEditarAutomovil
+            // 
+            this.btnEditarAutomovil.Location = new System.Drawing.Point(227, 6);
+            this.btnEditarAutomovil.Name = "btnEditarAutomovil";
+            this.btnEditarAutomovil.Size = new System.Drawing.Size(100, 23);
+            this.btnEditarAutomovil.TabIndex = 2;
+            this.btnEditarAutomovil.Text = "Editar Automovil";
+            this.btnEditarAutomovil.UseVisualStyleBackColor = true;
+            this.btnEditarAutomovil.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // dataEditarAuto
+            // 
+            this.dataEditarAuto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataEditarAuto.Location = new System.Drawing.Point(3, 35);
+            this.dataEditarAuto.Name = "dataEditarAuto";
+            this.dataEditarAuto.ReadOnly = true;
+            this.dataEditarAuto.Size = new System.Drawing.Size(741, 120);
+            this.dataEditarAuto.TabIndex = 3;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(61, 223);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(124, 23);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Guardar Cambios";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // textmodificarPrecio
+            // 
+            this.textmodificarPrecio.Location = new System.Drawing.Point(64, 197);
+            this.textmodificarPrecio.Name = "textmodificarPrecio";
+            this.textmodificarPrecio.Size = new System.Drawing.Size(121, 20);
+            this.textmodificarPrecio.TabIndex = 37;
+            // 
+            // comboModificarEstado
+            // 
+            this.comboModificarEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboModificarEstado.FormattingEnabled = true;
+            this.comboModificarEstado.Items.AddRange(new object[] {
+            "",
+            "Libre",
+            "En uso",
+            "En taller"});
+            this.comboModificarEstado.Location = new System.Drawing.Point(64, 170);
+            this.comboModificarEstado.Name = "comboModificarEstado";
+            this.comboModificarEstado.Size = new System.Drawing.Size(121, 21);
+            this.comboModificarEstado.TabIndex = 36;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(18, 204);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(40, 13);
+            this.label23.TabIndex = 35;
+            this.label23.Text = "Precio:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(15, 178);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(43, 13);
+            this.label24.TabIndex = 34;
+            this.label24.Text = "Estado:";
+            // 
+            // btnReservabuscar
+            // 
+            this.btnReservabuscar.Location = new System.Drawing.Point(6, 6);
+            this.btnReservabuscar.Name = "btnReservabuscar";
+            this.btnReservabuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnReservabuscar.TabIndex = 0;
+            this.btnReservabuscar.Text = "Automoviles disponibles";
+            this.btnReservabuscar.UseVisualStyleBackColor = true;
+            this.btnReservabuscar.Click += new System.EventHandler(this.btnReservabuscar_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(112, 82);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(27, 100);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(50, 13);
+            this.label25.TabIndex = 2;
+            this.label25.Text = "Matricula";
+            // 
             // RentaCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -835,10 +1020,16 @@
             this.tabControlPrincipal.ResumeLayout(false);
             this.tabPageReservas.ResumeLayout(false);
             this.tabControlReservas.ResumeLayout(false);
+            this.tabAgregarReserva.ResumeLayout(false);
+            this.tabAgregarReserva.PerformLayout();
             this.tabPageAutomoviles.ResumeLayout(false);
             this.tabControlAutomoviles.ResumeLayout(false);
             this.tabAgregarAutomovil.ResumeLayout(false);
             this.tabAgregarAutomovil.PerformLayout();
+            this.tabEliminarAutomovil.ResumeLayout(false);
+            this.tabEliminarAutomovil.PerformLayout();
+            this.tabModificarAutomovil.ResumeLayout(false);
+            this.tabModificarAutomovil.PerformLayout();
             this.tabPageUsuarios.ResumeLayout(false);
             this.tabControlUsuarios.ResumeLayout(false);
             this.tabAgregarUsuario.ResumeLayout(false);
@@ -848,6 +1039,7 @@
             this.tabModificarUsuario.ResumeLayout(false);
             this.tabModificarUsuario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataModificaUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataEditarAuto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -923,6 +1115,22 @@
         private System.Windows.Forms.Button btnEdeitarUsuario;
         private System.Windows.Forms.TextBox txtModificarUsuario;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBorrarMatricula;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txtEliminarMatricula;
+        private System.Windows.Forms.Button btnBuscarMatriculaeliminar;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridView dataEditarAuto;
+        private System.Windows.Forms.Button btnEditarAutomovil;
+        private System.Windows.Forms.TextBox txtModificarMatricula;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textmodificarPrecio;
+        private System.Windows.Forms.ComboBox comboModificarEstado;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Button btnReservabuscar;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
