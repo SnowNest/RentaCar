@@ -195,5 +195,78 @@ namespace RentaCar
             FrmBuscarMatricula buscarmatricula = new FrmBuscarMatricula();
             buscarmatricula.Show();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBox1.Text)
+            {
+                case "existente":
+                    textBox3.Enabled = false;
+                    textBox4.Enabled = false;
+                    textBox5.Enabled = false;
+                    textBox6.Enabled = false;
+                    textBox7.Enabled = false;
+
+                    textBox2.Enabled = true;
+
+                    break;
+                case "nuevo":
+                    textBox3.Enabled = true;
+                    textBox4.Enabled = true;
+                    textBox5.Enabled = true;
+                    textBox6.Enabled = true;
+                    textBox7.Enabled = true;
+
+                    textBox2.Enabled = false;
+                    break;
+
+
+            }
+        }
+
+        private void btnAgregarUsuarioreserva_Click(object sender, EventArgs e)
+        {
+            usuariosTableAdapter ConsultaUsuarios = new usuariosTableAdapter();
+            ConsultaUsuarios.Insert("cliente", textBox7.Text, textBox6.Text, textBox5.Text, "cliente", textBox4.Text, textBox3.Text, "NULL");
+            MessageBox.Show("Se agrego con exito alv compa");
+            textBox2.Text = textBox7.Text;
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox6.Text = "";
+            textBox7.Text = "";
+        }
+
+        private void btnConfirmarReserva_Click(object sender, EventArgs e)
+        {
+            veiculosTableAdapter Consultacar = new veiculosTableAdapter();
+            int dias = (dateentrega.Value - daterecogida.Value).Days;
+            int no = (DateTime.Now - dateentrega.Value).Days;
+            if (dias >= 2 && no >=0)
+            {
+                foreach (DataRow row in Consultacar.BuscarVeiculos().Rows)
+                {
+                    if (row[0].ToString() == textBox2.Text)
+                    {
+                        textBox8.Text = row[7].ToString();
+                        textBox9.Text = dias.ToString();
+                        textBox10.Text = (Convert.ToUInt16(row[7].ToString()) * dias).ToString();                       
+
+                    }
+
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("La cantidad minima de renta son 2 dias");
+            }
+        }
+
+        private void btnReserva_Click(object sender, EventArgs e)
+        {
+            reservasTableAdapter reserva = new reservasTableAdapter();
+            reserva.Insert("");
+        }
     }
 }
